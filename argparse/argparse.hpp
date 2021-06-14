@@ -112,6 +112,8 @@ class ArgumentParser
 {
     std::map<std::string, ArgumentOptionPtr> arguments;
     std::multimap<std::string, ValuePtr> options;
+    
+public:
     std::vector<std::string> args;
     
 public:
