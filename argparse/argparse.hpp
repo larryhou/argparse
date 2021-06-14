@@ -71,11 +71,6 @@ struct ArgumentType
     }
 };
 
-template<> struct ArgumentType<std::string>
-{
-    static ValuePtr parse(std::string s) { return std::make_shared<ArgumentValue>(s); }
-};
-
 #include <exception>
 class parse_exception: public std::exception
 {
